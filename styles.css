@@ -247,7 +247,7 @@ h3{
 
 .benefits-divs{
   padding: 20px 60px;
-  /*Utilizar flex en @media para que se acomode*/
+  /*Utilizar flex en @media para que se ponga en su lugar*/
 
 
 }
@@ -273,3 +273,7 @@ h3{
     font-weight: 400;
     margin-bottom: 30px;
 }
+
+/*Section-3*/
+
+
