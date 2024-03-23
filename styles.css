@@ -33,18 +33,21 @@
 
 }
 
-h1{
+/*CSS-General*/
 
+h1{
+  font-size: 42px;
 }
 
 h2{
-
+  font-size: 18px;
 }
 
 h3{
 
 }
 
+/*Section-1*/
 
 
 .header{
@@ -211,4 +214,62 @@ h3{
     font-weight: 500;
     margin-top: 5px;
 
+}
+
+
+/*Section-2*/
+
+
+.benefits{
+    padding-top: 30px;
+}
+
+.benefits-text{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: var(--font-5xl);
+    font-family: var(--main-text-form);
+    color: var(--main-color);
+    font-weight: 400;
+    padding: 0 100px;
+}
+
+.benefits-subtext{
+    display: block;
+    text-align: center;
+    color: var(--tertiary-text);
+    font-family: var(--secondary-text-form);
+    font-size: var(--font-2xl);
+    font-weight: 400;
+    padding: 0 60px;
+}
+
+.benefits-divs{
+  padding: 20px 60px;
+  /*Utilizar flex en @media para que se acomode*/
+
+
+}
+
+.benefits-logo{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.benefits-title{
+    font-family: var(--secondary-text-form);
+    font-size: var(--font-2xl);
+    color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.benefits-subtitle{
+    color: var(--tertiary-text);
+    font-size: var(--font-xl);
+    font-family: var(--secondary-text-form);
+    font-weight: 400;
+    margin-bottom: 30px;
 }
