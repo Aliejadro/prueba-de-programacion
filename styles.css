@@ -1,50 +1,67 @@
 *, *::after, *::before{
-    margin: 0;
     padding: 0;
-
+    margin: 0;
 }
 
 :root{
-    --color-1: rgb(52, 59, 85);
-    --color-2: rgb(129, 132, 134);
-    --color-3: rgb(115, 87, 246);
-    --color-4: rgb(92, 65, 209);
-    --color-5: rgb(89, 95, 117);
-    --color-6: rgb(238, 242, 251); 
-    --color-7: rgb(255, 255, 255); 
-    --color-8: rgb(0, 0, 0); 
-    --color-9: rgb(126, 147, 176); 
-    --font-zise-1: 12px;
-    --font-zise-2: 14px;
-    --font-zise-3: 15px;
-    --font-zise-4: 16px;
-    --font-zise-5: 18px;
-    --font-zise-6: 20px;
-    --font-zise-7: 42px;
-    --styles-form-1: "DM Sans";
-    --styles-form-2: "DM Serif Text";
-    --styles-form-3: "Kalam";
+
+    --main-color: rgb(52, 59, 85); 
+    --secondary-text: rgb(129, 132, 134); 
+    --tertiary-text: rgb(89, 95, 117); 
+    
+    --info-text: rgb(0, 0, 0);  
+    --info-sub-text: rgb(126, 147, 176);  
+
+    --link-color: rgb(115, 87, 246); 
+    --link-color-hover: rgb(92, 65, 209);
+
+    --background: rgb(238, 242, 251);  
+    --background-secondary: rgb(255, 255, 255); 
+
+    --font-sx: 12px; 
+    --font-sm: 14px;
+    --font-base: 15px;
+    --font-xl: 16px; 
+    --font-2xl: 18px; 
+    --font-3xl: 20px; 
+    --font-4xl: 28px; 
+    --font-5xl: 42px; 
+   
+    --main-text-form: "DM Serif Text"; 
+    --secondary-text-form: "DM Sans";
+    --tertiary-text-form: "Kalam"; 
+
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
 
 }
 
 
-/*Seccion-1*/
 
-.section-1{
+.header{
     display: grid;
     grid-template-columns: 1fr ;
 
 }
 
-.box-1{
+.header-info{
     width: 100%;
     position: relative;
-    background-color: var(--color-6);
+    background-color: var(--background);
     
     
 }
 
-header{
+.header-info-title{
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -53,7 +70,7 @@ header{
     
 }
 
-header img{
+.header-info-logo{
     display: inline;
     vertical-align: middle;
     width: 60px;
@@ -61,19 +78,19 @@ header img{
     
 }
 
-header h1{
+.header-info-subtitle{
     display: inline;
-    font-size: var(--font-zise-3);
-    color: var(--color-1);
-    font-family: var(--styles-form-1);
+    font-size: var(--font-base);
+    color: var(--main-color);
+    font-family: var(--secondary-text-form);
 }
 
-.box-1-p-1{
+.header-info-text{
   text-align: center;
   font-weight: 400;
-  font-size: var(--font-zise-7);
-  color: var(--color-1);
-  font-family: var(--styles-form-2);
+  font-size: var(--font-4xl);
+  color: var(--main-color);
+  font-family: var(--main-text-form);
   margin-bottom: 10px;
   padding: 0 20px;
   
@@ -81,24 +98,24 @@ header h1{
 
 }
 
-.box-1-p-2{
+.header-info-subtext{
     text-align: center;
-    font-size: var(--font-zise-6);
-    color: var(--color-2);
+    font-size: var(--font-3xl);
+    color: var(--secondary-text);
     font-weight: 700;
-    font-family: var(--styles-form-1);
+    font-family: var(--secondary-text-form);
     padding: 0 50px;
 }
 
-.box-1-arrow{
+.header-info-arrow{
     position: absolute;
     right: 8%;
 }
 
-.box-1 a{
+.header-info-link{
     width: 250px;
     height: 40px;
-    background-color: var(--color-3);  
+    background-color: var(--link-color);  
     margin: 0 auto;
     display: block;
     margin-top: 50px;
@@ -110,49 +127,49 @@ header h1{
     transition:  0.3s ease-in-out;
 }
 
-.box-1 a:hover{
-    background-color: var(--color-4);
+.header-info-link:hover{
+    background-color: var(--link-color-hover);
 }
 
-.box-1-p-3{
+.header-info-link-text{
     text-align: center;
-    font-family: var(--styles-form-1);
+    font-family: var(--secondary-text-form);
     font-weight: 400;
-    font-size: var(--font-zise-1);
+    font-size: var(--font-sx);
 }
 
-.box-1-1{
+.header-img{
     width: 100%;
     position: relative;
-    background-color: var(--color-6);
+    background-color: var(--background);
     padding-top: 20px;
     
 }
 
-.box-1-1-main-img{
+.header-img-main{
     display: block;
     margin: 0 auto;
 }
 
-.box-1-1-p-1{
+.header-img-dialogue{
     position: absolute;
-    font-family: var(--styles-form-3);
+    font-family: var(--tertiary-text-form);
     top: 15%;
     left: 3%;
     
 }
-.box-1-1-p-2{
+.header-img-dialogue-second{
     position: absolute;
-    font-family: var(--styles-form-3);
+    font-family: var(--tertiary-text-form);
     top: 18%;
     left: 3%;
     width: 170px;
 }
 
-.box-1-1-informative-box{
+.header-img-div{
     width: 175px;
     height: 60px;
-    background-color: var(--color-7);
+    background-color: var(--background-secondary);
     position: absolute;
     border-radius: 10px;
     box-shadow: 0 0 10px 1px rgb(187, 184, 184);
@@ -162,38 +179,36 @@ header h1{
 
 }
 
-.box-1-1-informative-box-1-position{
+.header-img-div-first-position{
     top: 40%;
     left: 5%;
 }
 
-.box-1-1-informative-box-2-position{
+.header-img-div-second-position{
     top: 65%;
     left: 20%;
 }
 
-.box-1-1-informative-box-img{
+.header-img-logo{
     width: 50px;
     height: 50px;
     margin-top: 2px;
 }
 
-.box-1-1-informative-box-1-div-text-p-1{
+.header-img-title{
   font-weight: 500;
-  font-family: var(--styles-form-1);
-  font-size: var(--font-zise-2);
-  color: var(--color-8s);
+  font-family: var(--secondary-text-form);
+  font-size: var(--font-sm);
+  color: var(--info-text);
   margin-top: 15px;
 
 }
 
-.box-1-1-informative-box-1-div-text-p-2{
-    color: var(--color-9);
-    font-family: var(--styles-form-1);
-    font-size: var(--font-zise-1);
+.header-img-subtitle{
+    color: var(--info-sub-text);
+    font-family: var(--secondary-text-form);
+    font-size: var(--font-sx);
     font-weight: 500;
     margin-top: 5px;
 
 }
-
-/*Fin-de-la-Seccion-1*/
