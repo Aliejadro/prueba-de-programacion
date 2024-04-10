@@ -49,19 +49,35 @@ h3{
 
 /*Section-1*/
 
+.header-container{
+    background-color: var(--background);
+    padding-left: 50px;
+    padding-right: 50px;
+
+    
+}
 
 .header{
     display: grid;
     grid-template-columns: 1fr ;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+@media screen and (min-width: 1100px){
+
+    .header{
+        grid-template-columns: repeat(2,1fr);       
+    }
+ 
 }
 
 .header-info{
     width: 100%;
     position: relative;
-    background-color: var(--background);
     
-    
+  
 }
 
 .header-info-title{
@@ -69,15 +85,22 @@ h3{
     text-align: center;
     padding-top: 10px;
     margin-bottom: 20px;
-    
-    
+}
+
+@media screen and (min-width: 1100px){
+    .header-info-title{
+        margin-top: 20px;
+        text-align: justify; 
+        margin-bottom: 100px;
+    }
+
 }
 
 .header-info-logo{
     display: inline;
     vertical-align: middle;
-    width: 60px;
-    height: 40px;
+    width: 40px;
+    height: 100%;
     
 }
 
@@ -86,6 +109,8 @@ h3{
     font-size: var(--font-base);
     color: var(--main-color);
     font-family: var(--secondary-text-form);
+    font-weight: 700;
+    vertical-align: middle;
 }
 
 .header-info-text{
@@ -95,24 +120,76 @@ h3{
   color: var(--main-color);
   font-family: var(--main-text-form);
   margin-bottom: 10px;
-  padding: 0 20px;
   
+}
 
+@media screen and (min-width: 800px) { 
 
+    .header-info-text{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+
+    .header-info-text{ 
+        text-align: left;
+        max-width: 600px;
+        margin-bottom: 30px;
+        font-size: var(--font-5xl);         
+    }
 }
 
 .header-info-subtext{
     text-align: center;
     font-size: var(--font-3xl);
     color: var(--secondary-text);
-    font-weight: 700;
+    font-weight: bolder;
     font-family: var(--secondary-text-form);
-    padding: 0 50px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 800px) {
+    .header-info-subtext{
+    margin-bottom: 20px;
+
+}
+}
+
+@media screen and (min-width: 1100px){
+
+    .header-info-subtext{
+        text-align: left; 
+        margin-bottom: 30px;
+        width: 600px;
+        font-size: var(--font-2xl);
+    }
 }
 
 .header-info-arrow{
     position: absolute;
-    right: 8%;
+    right: 3%;
+}
+
+@media screen and (min-width: 800px) {
+    .header-info-arrow{
+        right: 20%;
+    }
+}
+
+@media screen and (min-width: 950px) { 
+        
+    .header-info-arrow{
+        right: 25%;
+    }       
+}
+
+@media screen and (min-width: 1100px){
+    .header-info-arrow{
+        right: 37%;
+        top: 55%;
+    }
+
 }
 
 .header-info-link{
@@ -125,9 +202,20 @@ h3{
     padding-top: 20px;
     text-align: center;
     border-radius: 100px;
-    color: var(--color-7);
     text-decoration: none;
     transition:  0.3s ease-in-out;
+    cursor: pointer;
+    color: var(--background-secondary);
+    font-size: var(--font-2xl);
+}
+
+@media screen and (min-width: 1100px){
+    
+    .header-info-link{
+        width: 323px;
+        height: 63;
+        margin-right: 280px;
+    }
 }
 
 .header-info-link:hover{
@@ -137,42 +225,93 @@ h3{
 .header-info-link-text{
     text-align: center;
     font-family: var(--secondary-text-form);
-    font-weight: 400;
-    font-size: var(--font-sx);
+    font-weight: 700;
+    font-size: var(--font-sx);    
+}
+
+@media screen and (min-width: 1100px){
+
+    .header-info-link-text{
+     text-align: justify;
+     margin-left: 70px; 
+    }
 }
 
 .header-img{
     width: 100%;
     position: relative;
-    background-color: var(--background);
-    padding-top: 20px;
+    padding-top: 20px; 
+    max-width: 600px; 
+    margin: 0 auto; 
     
+    
+}
+
+@media screen and (min-width: 1100px){
+    .header-img{
+        min-width: 430px;
+        
+    }
 }
 
 .header-img-main{
     display: block;
     margin: 0 auto;
+   
+    
+}
+
+@media screen and (min-width: 1100px){
+    .header-img-main{ 
+        margin-left: 50px;
+    }
+}
+
+
+.header-img-container{
+   position: relative; 
+   
+   
+  
+}
+
+.header-img-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    
 }
 
 .header-img-dialogue{
+    font-size: 14px;
     position: absolute;
     font-family: var(--tertiary-text-form);
     top: 15%;
-    left: 3%;
-    
+    left: -4%;  
 }
-.header-img-dialogue-second{
-    position: absolute;
-    font-family: var(--tertiary-text-form);
-    top: 18%;
-    left: 3%;
-    width: 170px;
+
+@media screen and (min-width: 600px) {    
+    .header-img-dialogue{
+         left: 8%;
+     }           
+ }
+
+   
+ @media screen and (min-width: 1100px){
+
+    .header-img-dialogue{
+        left: 5%;            
+    }
 }
+
 
 .header-img-div{
     width: 175px;
     height: 60px;
-    background-color: var(--background-secondary);
+    background-color: var(--background-secondary); 
     position: absolute;
     border-radius: 10px;
     box-shadow: 0 0 10px 1px rgb(187, 184, 184);
@@ -183,13 +322,13 @@ h3{
 }
 
 .header-img-div-first-position{
-    top: 40%;
-    left: 5%;
+    top: 37%;
+    left: 6%;
 }
 
 .header-img-div-second-position{
-    top: 65%;
-    left: 20%;
+    top: 60%;
+    left: 18%;
 }
 
 .header-img-logo{
@@ -216,12 +355,15 @@ h3{
 
 }
 
-
 /*Section-2*/
 
 
 .benefits{
     padding-top: 30px;
+   
+
+   
+
 }
 
 .benefits-text{
@@ -243,19 +385,41 @@ h3{
     font-size: var(--font-2xl);
     font-weight: 400;
     padding: 0 60px;
+    padding-bottom: 20px;
 }
 
 .benefits-divs{
   padding: 20px 60px;
+  margin: 0  auto;
   /*Utilizar flex en @media para que se ponga en su lugar*/
-
-
 }
+
+  
+@media screen and (min-width: 1100px){
+ 
+    .benefits-divs{
+        display: flex; 
+        justify-content: space-between;
+        
+        
+    }
+    
+}
+
+
 
 .benefits-logo{
     width: 50px;
     height: 50px;
-    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto; 
+  
+}
+
+@media screen and (min-width: 1100px){
+  .benefits-logo{
+    display: inline;
+  }
 }
 
 .benefits-title{
@@ -264,7 +428,15 @@ h3{
     color: var(--main-color);
     font-weight: 700;
     margin-bottom: 10px;
+    text-align: center;
+    
 }
+
+@media screen and (min-width: 1100px){
+    .benefits-title{
+        text-align: left;
+    }
+  }
 
 .benefits-subtitle{
     color: var(--tertiary-text);
@@ -272,8 +444,22 @@ h3{
     font-family: var(--secondary-text-form);
     font-weight: 400;
     margin-bottom: 30px;
+    text-align: center;
 }
 
+@media screen and (min-width: 1100px){
+    .benefits-subtitle{
+        text-align: left;
+        margin-right: 20px;
+    }
+  }
+
 /*Section-3*/
+
+
+
+
+
+
 
 
